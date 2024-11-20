@@ -1,0 +1,410 @@
+#aboutUsContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#aboutUsContent > .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutUsContent > .wrapper > .tagembed{
+    width: 100%;
+    max-width: 1920px;
+    padding: 100px;
+}
+
+#aboutUsContent > .wrapper > .about-details{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#aboutUsContent > .wrapper > .about-details > .details-container{
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#aboutUsContent > .wrapper > .about-details > .details-container > .details,
+#aboutUsContent > .wrapper > .about-details > .details-container > .image{
+    width: 50%;
+}
+
+#aboutUsContent > .wrapper > .about-details > .details-container > .details { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+#aboutUsContent > .wrapper > .about-details > .details-container > .details > .label{
+    color: var(--label);
+    font-size: 22px;
+}
+
+#aboutUsContent > .wrapper > .about-details > .details-container > .details > .title{
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#aboutUsContent > .wrapper > .about-details > .details-container > .details > .desc{
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 137%;
+    text-align: justify;
+}
+
+#aboutUsContent > .wrapper > .about-details > .details-container > .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutUsContent > .wrapper > .about-details > .details-container > .image > img{
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
+
+#aboutUsContent > .wrapper > .about-details.member > .details-container > .image > img{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+#aboutUsContent > .wrapper > .about-details.member:not(.inverted):after{
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 45%;
+    height: 65%;
+    background-color: var(--text);
+    z-index: -1;
+}
+
+#aboutUsContent > .wrapper > .about-details.inverted > .details-container{
+    flex-direction: row-reverse;
+}
+
+#aboutUsContent > .wrapper > .about-details.member.inverted::after{
+    content: '';
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 45%;
+    height: 65%;
+    background-color: var(--text);
+    z-index: -1;
+}
+
+#aboutUsContent > .wrapper > .hero{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#aboutUsContent > .wrapper > .hero > .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 433px;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary);
+    z-index: -1;
+}
+
+#aboutUsContent > .wrapper > .hero.primary > .background{
+    background-color: var(--primary);
+}
+
+#aboutUsContent > .wrapper > .hero.no-max-height{
+    max-height: none;
+}
+
+#aboutUsContent > .wrapper > .hero.no-max-height > .background{
+    max-height: none;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content{
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .title{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 620px;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content.center{
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content.center > .title{
+    max-width: none;
+    gap: 10px;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content.center > .title > p{
+    text-align: center;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content.center > .desc{
+    text-align: center;
+    max-width: 620px;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    line-height: 137%;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .links > a{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 250ms ease-in-out;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .links > a:hover{
+    transform: scale(0.95);
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .links > a > img{
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .links > a > p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .title > p:first-child{
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .title > p:last-child{
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .desc{
+    max-width: 620px;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    line-height: 137%;
+    text-align: justify;
+}
+
+
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us{
+    width: 100%;
+    max-width: 840px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .title{
+    font-size: 24px;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .list > .item{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    min-height: 3rem;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .list > .item > svg{
+    min-width: 20px;
+    min-height: 20px;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .list > .item > svg *{
+    color: var(--accent);
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .list > .item > p{
+    font-size: 18px;
+}
+
+#aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .list > .item .highlight{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--accent);
+}
+
+@media only screen and (max-width: 1270px){
+    #aboutUsContent > .wrapper > .about-details.member:not(.inverted):after,
+    #aboutUsContent > .wrapper > .about-details.member.inverted::after{
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #aboutUsContent > .wrapper > .about-details > .details-container,
+    #aboutUsContent > .wrapper > .tagembed{
+        padding: 50px;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .details-container > .details > .label,
+    #aboutUsContent > .wrapper > .hero > .hero-content > .title > p:last-child,
+    #aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .title{
+        font-size: 20px;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .details-container > .details > .title,
+    #aboutUsContent > .wrapper > .hero > .hero-content > .title > p:first-child{
+        font-size: 28px;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .details-container > .details > .desc,
+    #aboutUsContent > .wrapper > .hero > .hero-content > .desc,
+    #aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .list > .item > p{
+        font-size: 16px;
+    }
+
+    #aboutUsContent > .wrapper > .about-details.member:not(.inverted):after{
+        top: 30px;
+        height: 65%;
+    }
+
+    #aboutUsContent > .wrapper > .about-details.member.inverted::after{
+        bottom: 30px;
+        height: 65%;
+    }
+
+    #aboutUsContent > .wrapper > .hero > .hero-content{
+        padding: 50px;
+    }
+
+    #aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us > .list > .item .highlight{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #aboutUsContent > .wrapper > .about-details > .details-container,
+    #aboutUsContent > .wrapper > .about-details.inverted > .details-container{
+        flex-direction: column-reverse;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .details-container > .details{
+        width: 100%;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .details-container > .image{
+        position: relative;
+        width: 75%;
+        padding: 20px 0;
+    }
+
+    #aboutUsContent > .wrapper > .about-details.member > .details-container > .image::after{
+        position: absolute;
+        content: '';
+        background-color: var(--text);
+        width: 100dvw;
+        height: 100%;
+        z-index: -1;
+    }
+    
+    #aboutUsContent > .wrapper > .about-details.member:not(.inverted):after{
+        display: none;
+    }
+
+    #aboutUsContent > .wrapper > .about-details.member.inverted::after{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #aboutUsContent > .wrapper > .about-details > .details-container{
+        padding: 20px;
+    }
+
+    #aboutUsContent > .wrapper > .hero > .hero-content{
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+    #aboutUsContent > .wrapper > .about-details > .details-container > .image{
+        width: 100%;
+    }
+
+    #aboutUsContent > .wrapper > .about-details > .details-container{
+        padding: 50px;
+    }
+
+    #aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us,
+    #aboutUsContent > .wrapper > .tagembed{
+        padding: 20px;
+    }
+}

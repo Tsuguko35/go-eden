@@ -1,0 +1,358 @@
+#becomeADealerContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#becomeADealerContent > .wrapper{
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#becomeADealerContent > header{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#becomeADealerContent > header > .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#becomeADealerContent > header > .background::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--hero-overlay-primary-light);
+    z-index: -1;
+}
+
+#becomeADealerContent > header > .background > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    z-index: -2;
+}
+
+#becomeADealerContent > header > .text-content{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1;
+}
+
+#becomeADealerContent > header > .text-content > .title{
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#becomeADealerContent > header > .text-content > .desc{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 620px;
+    text-align: center;
+}
+
+#becomeADealerContent > header > .text-content > button{
+    width: 158px;
+    height: 48px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: var(--primary);
+    border: none;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+#becomeADealerContent > header > .text-content > button:hover{
+    background-color: white;
+    color: var(--primary)
+}
+
+#becomeADealerContent > .wrapper > .offset{
+    width: 100%;
+    max-width: 1024px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    transform: translateY(-160px);
+    padding: 20px;
+}
+
+#becomeADealerContent > .wrapper > .offset > .label{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#becomeADealerContent > .wrapper > .offset > .cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#becomeADealerContent > .wrapper > .offset > .cards > .card{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 270px;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#becomeADealerContent > .wrapper > .offset > .cards > .card > .image{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#becomeADealerContent > .wrapper > .offset > .cards > .card > .image > img{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+#becomeADealerContent > .wrapper > .offset > .cards > .card > .text-content{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#becomeADealerContent > .wrapper > .offset > .cards > .card > .text-content > .title{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#becomeADealerContent > .wrapper > .offset > .cards > .card > .text-content > .desc{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#becomeADealerContent > .wrapper > .offset > .counters{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+#becomeADealerContent > .wrapper > .offset > .counters > .count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    gap: 10px;
+}
+
+#becomeADealerContent > .wrapper > .offset > .counters > .count > .number{
+    font-weight: 500;
+    font-size: 42px;
+    color: var(--primary);
+    text-align: center;
+}
+
+#becomeADealerContent > .wrapper > .offset > .counters > .count > .label{
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+}
+
+#becomeADealerContent > .company-offer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#becomeADealerContent > .company-offer *{
+    color: white;
+}
+
+#becomeADealerContent > .company-offer > .wrapper{
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .text-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .text-content > .header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .text-content > .header > .label{
+    font-weight: 300;
+    line-height: 150%;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .text-content > .header > .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .text-content > .bullets{
+    width: 100%;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .text-content > .bullets > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .text-content > .bullets > ul > li{
+    font-weight: 300;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .text-content > .bullets > ul > li > .highlight{
+    font-weight: bold;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .image{
+    position: relative;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#becomeADealerContent > .company-offer > .wrapper > .image > img{
+    position: absolute;
+    width: 412px;
+    height: 560px;
+    object-fit: cover;
+    object-position: center right;
+    box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+#becomeADealerContent > .wrapper > .form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+@media only screen and (max-width: 1270px){
+    #becomeADealerContent > .company-offer > .wrapper > .text-content > .bullets > ul > li{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #becomeADealerContent > .wrapper,
+    #becomeADealerContent > .company-offer > .wrapper{
+        padding: 50px;
+    }
+
+    #becomeADealerContent > .wrapper > .offset{
+        transform: translateY(0);
+        max-width: none;
+        padding: 0;
+    }
+
+    #becomeADealerContent > .wrapper, #becomeADealerContent > .company-offer > .wrapper{
+        flex-direction: column;
+    }
+
+    #becomeADealerContent > .company-offer > .wrapper > .text-content,
+    #becomeADealerContent > .company-offer > .wrapper > .image{
+        width: 100%;
+    }
+
+    #becomeADealerContent > .company-offer > .wrapper > .image > img{
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    #becomeADealerContent > .wrapper > .form-container{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #becomeADealerContent > .wrapper,
+    #becomeADealerContent > .company-offer > .wrapper{
+        padding: 20px;
+    }
+
+    #becomeADealerContent > header > .text-content > .title{
+        font-size: 36px;
+    }
+
+    #becomeADealerContent > header > .text-content > .desc{
+        font-size: 16px;
+    }
+
+    #becomeADealerContent > .wrapper > .offset > .label,
+    #becomeADealerContent > .company-offer > .wrapper > .text-content > .header > .title{
+        font-size: 20px;
+    }
+
+    #becomeADealerContent > .company-offer > .wrapper > .text-content > .header > .label{
+        font-size: 14px;
+    }
+}

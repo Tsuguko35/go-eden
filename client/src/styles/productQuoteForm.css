@@ -1,0 +1,139 @@
+#productQuoteForm{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#productQuoteForm > .text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#productQuoteForm > .text-content > .label{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#productQuoteForm > .text-content > .desc{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#productQuoteForm > .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#productQuoteForm > .inputs > .input-group{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#productQuoteForm > .inputs > .input-group > .custom-input,
+#productQuoteForm > .inputs > .input-group > .custom-select,
+#productQuoteForm > .inputs > .input-group > .custom-texarea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+#productQuoteForm > .inputs > .input-group .label{
+    font-size: 14px;
+    color: var(--text);
+}
+
+#productQuoteForm > .inputs > .input-group > .custom-input > input{
+    width: 100%;
+    border: 1px solid var(--label);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#productQuoteForm > .inputs > .input-group > .custom-select > select{
+    width: 100%;
+    border: 1px solid var(--label);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#productQuoteForm > .inputs > .input-group > .custom-texarea > textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--label);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+#productQuoteForm > .inputs > .submit-area{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#productQuoteForm > .inputs > .submit-area > button{
+    width: 100%;
+    max-width: 130px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+#productQuoteForm > .inputs > .submit-area > button:hover{
+    color: var(--primary);
+    background-color: white;
+    border-color: var(--primary);
+}
+
+#productQuoteForm > .inputs > .submit-area > p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#productQuoteForm > .inputs > .submit-area > p.success{
+    padding: 10px;
+    background-color: #c8f7c8;
+    border: 1px solid #93C572;
+    color: green;
+    border-radius: 3px;
+}
+
+#productQuoteForm > .inputs > .submit-area > p.error{
+    padding: 10px;
+    background-color: #F2D2D4;
+    border: 1px solid #FA5F55;
+    color: #FA5F55;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 425px){
+    #productQuoteForm > .inputs > .input-group{
+        flex-direction: column;
+    }
+}

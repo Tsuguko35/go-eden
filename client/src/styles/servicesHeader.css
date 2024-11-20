@@ -1,0 +1,237 @@
+#servicesHeader{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#servicesHeader > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicesHeader > .wrapper > .background{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+#servicesHeader > .wrapper > .background > .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--hero-overlay-secondary);
+    z-index: 0;
+}
+
+#servicesHeader > .wrapper > .background > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#servicesHeader > .wrapper > .header-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 100px;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content,
+#servicesHeader > .wrapper > .header-content > .form{
+    width: 50%;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .services{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .services *{
+    color: white;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .services > .title{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .services > .desc{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .services > .details{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .services > .details > .detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .services > .details > .detail > .label{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .services > .details > .detail > .desc{
+    font-size: 18px;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .list > .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .list > .list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .list > .list-container > .item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .list > .list-container > .item > svg{
+    min-width: 15px;
+    min-height: 15px;
+}
+
+#servicesHeader > .wrapper > .header-content > .text-content > .list > .list-container > .item > p{
+    font-size: 18px;
+}
+
+#servicesHeader > .wrapper > .header-content > .form{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 1336px){
+    #servicesHeader > .wrapper > .background{
+        height: 55%;
+    }
+}
+
+@media only screen and (max-width: 1269px){
+    #servicesHeader > .wrapper > .header-content{
+        padding: 50px;
+    }
+
+    #servicesHeader > .wrapper > .header-content > .text-content > .services > .title{
+        font-size: 36px;
+    }
+
+    #servicesHeader > .wrapper > .header-content > .text-content > .services > .desc{
+        font-size: 20px;
+    }
+
+    #servicesHeader > .wrapper > .header-content > .text-content > .services > .details > .detail > .label{
+        font-size: 24px;
+    }
+
+    #servicesHeader > .wrapper > .header-content > .text-content > .services > .details > .detail > .desc,
+    #servicesHeader > .wrapper > .header-content > .text-content > .list > .list-container > .item > p{
+        font-size: 16px;
+    }
+
+    #servicesHeader > .wrapper > .header-content > .text-content > .list > .title{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #servicesHeader > .wrapper > .background{
+        height: 22%;
+    }
+
+    #servicesHeader > .wrapper > .header-content{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #servicesHeader > .wrapper > .header-content > .text-content, 
+    #servicesHeader > .wrapper > .header-content > .form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #servicesHeader > .wrapper > .background{
+        height: 24%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #servicesHeader > .wrapper > .header-content{
+        padding: 20px;
+    }
+
+    #servicesHeader > .wrapper > .header-content > .text-content > .services > .title{
+        font-size: 32px;
+    }
+
+    #servicesHeader > .wrapper > .header-content > .text-content > .services > .desc{
+        font-size: 18px;
+    }
+
+    #servicesHeader > .wrapper > .background{
+        height: 20%;
+    }
+}
+
+
+@media only screen and (max-width: 576px){
+    #servicesHeader > .wrapper > .background{
+        height: 26%;
+    }
+}
+
+@media only screen and (max-width: 484px){
+    #servicesHeader > .wrapper > .background{
+        height: 23%;
+    }
+}
+
+@media only screen and (max-width: 386px){
+    #servicesHeader > .wrapper > .background{
+        height: 27%;
+    }
+}

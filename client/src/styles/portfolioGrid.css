@@ -1,0 +1,197 @@
+#portfolioGrid{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolioGrid > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolioGrid > .wrapper > .background{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background-color: var(--hero-overlay-primary);
+    z-index: 0;
+}
+
+#portfolioGrid > .wrapper > .grid-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    z-index: 1;
+}
+
+
+
+#portfolioGrid > .wrapper > .grid-content > .title{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .desc{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    max-width: 800px;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p{
+    color: var(--primary);
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p.main{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p.sub{
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    text-align: center;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .item{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+
+    filter: blur(5px);
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .item > img{
+    width: 100%;
+    height: 100%;
+    max-height: 230px;
+    object-fit: cover;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .item > .item-label{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .item > .item-label > .label{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .item > .item-label > .label > .date{
+    color: var(--secondary);
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .item > .item-label > a{
+    width: 37px;
+    height: 37px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .item > .item-label > a:hover{
+    background-color: white;
+    border-color: var(--primary);
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .item > .item-label > a > svg *{
+    color: white;
+    transition: all 250ms ease-in-out ;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .item > .item-label > a:hover > svg *{
+    color: white;
+    color: var(--primary);
+}
+
+@media only screen and (max-width: 1024px){
+    #portfolioGrid > .wrapper > .grid-content > .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #portfolioGrid > .wrapper > .grid-content{
+        padding: 50px;
+    }
+
+    #portfolioGrid > .wrapper > .grid-content > .title{
+        font-size: 32px;
+    }
+
+    #portfolioGrid > .wrapper > .grid-content > .desc{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #portfolioGrid > .wrapper > .grid-content{
+        padding: 50px 20px;
+    }
+
+    #portfolioGrid > .wrapper > .grid-content > .grid{
+        grid-template-columns: 1fr;
+    }
+
+    #portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p.main{
+        font-size: 32px;
+    }
+    
+    #portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p.sub{
+        font-size: 16px;
+    }
+}

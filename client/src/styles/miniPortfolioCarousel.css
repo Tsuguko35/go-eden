@@ -1,0 +1,148 @@
+#miniPortfolioCarousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#miniPortfolioCarousel > .image{
+    position: absolute;
+    top: -75px;
+    left: -50px;
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+}
+
+#miniPortfolioCarousel > .image > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-background);
+    object-fit: cover;
+}
+
+#miniPortfolioCarousel .swiper-container{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    z-index: 0;
+}
+
+#miniPortfolioCarousel .card{
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    padding: 50px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--text);
+}
+
+#miniPortfolioCarousel .card *{
+    color: white;
+}
+
+#miniPortfolioCarousel .card > .title{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#miniPortfolioCarousel .card > .list{
+    padding-left: 10px;
+}
+
+#miniPortfolioCarousel .swiper-pagination-bullet{
+    width: 25px;
+    height: 9px;
+    border-radius: 0;
+    background: white;
+    opacity: 1;
+    border-radius: 50px;
+}
+
+#miniPortfolioCarousel .swiper-pagination-bullet-active{
+    width: 25px;
+    height: 9px;
+    border-radius: 50px;
+    background: var(--primary);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1335px){
+    #landingPageContent > .wrapper > .company-details > .image.carousel{
+        padding: 0;
+    }
+
+    #miniPortfolioCarousel > .image {
+        top: -60px;
+        left: -5px;
+        width: 175px;
+        height: 175px;
+    }
+
+    #miniPortfolioCarousel .card{
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #miniPortfolioCarousel > .image {
+        top: 18%;
+        left: -15px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #miniPortfolioCarousel .card{
+        padding-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #miniPortfolioCarousel .swiper-container{
+        width: 100%;
+
+    }
+
+    #miniPortfolioCarousel > .image {
+        top: 18%;
+        left: 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #miniPortfolioCarousel .card{
+        padding-left: 220px;
+    }
+}
+
+@media only screen and (max-width: 579px){
+    #miniPortfolioCarousel > .image {
+        top: 0;
+        left: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #miniPortfolioCarousel .swiper-container{
+       height: 100%;
+    }
+
+    #miniPortfolioCarousel > .image > img{
+        width: 150px;
+        height: 150px;
+    }
+    #miniPortfolioCarousel .card{
+        padding: 25px;
+        padding-top: 170px;
+        min-height: 400px;
+    }
+}

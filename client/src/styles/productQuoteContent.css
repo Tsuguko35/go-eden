@@ -1,0 +1,191 @@
+#productQuoteContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#productQuoteContent > .wrapper{
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#productQuoteContent > .wrapper > header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#productQuoteContent > .wrapper > header > .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#productQuoteContent > .wrapper > header > .desc{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 137%;
+    max-width: 853px;
+}
+
+#productQuoteContent > .wrapper > header > .product-count{
+    font-size: 16px;
+    font-weight: 300;   
+}
+
+#productQuoteContent > .wrapper > header > .product-count > .count{
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list{
+    width: 45%;
+    padding: 30px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    border-right: 0.5px solid var(--label);
+    overflow-y: auto;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .image{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .image > img {
+    min-width: 75px;
+    min-height: 75px;
+    max-width: 75px;
+    max-height: 75px;
+    background-color: var(--primary);
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .details{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .details > .name{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .details > .desc{
+    font-size: 14px;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .action{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .action > svg{
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    cursor: pointer;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .action > svg *{
+    color: var(--secondary);
+    transition: color 250ms ease-in-out;
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .action > svg:hover *{
+    color: var(--secondary-background);
+}
+
+#productQuoteContent > .wrapper > .quote-checkout > .form{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px){
+    #productQuoteContent > .wrapper{
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #productQuoteContent > .wrapper > .quote-checkout{
+        flex-direction: column;
+    }
+
+    #productQuoteContent > .wrapper > .quote-checkout > .product-list,
+    #productQuoteContent > .wrapper > .quote-checkout > .form{
+        width: 100%;
+    }
+
+    #productQuoteContent > .wrapper > .quote-checkout > .product-list{
+        max-height: 350px;
+    }
+
+    #productQuoteContent > .wrapper > .quote-checkout > .product-list{
+        border: none;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #productQuoteContent > .wrapper{
+        padding: 20px;
+    }
+
+    #productQuoteContent > .wrapper > .quote-checkout > .product-list > .product > .image > img{
+        min-width: 60px;
+        min-height: 60px;
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    #productQuoteContent > .wrapper > .quote-checkout{
+        padding: 15px;
+    }
+}

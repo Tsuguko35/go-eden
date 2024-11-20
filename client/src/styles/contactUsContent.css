@@ -1,0 +1,259 @@
+#contactUsContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#contactUsContent > .wrapper{
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form,
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials{
+    width: 50%;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 620px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > .label{
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--secondary);
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > .title{
+    font-size: 42px;
+    color: var(--text);
+    font-weight: bold;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > .desc{
+    font-size: 18px;
+    color: var(--text);
+    font-weight: 300;
+    text-align: justify;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .input-group{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .input-group > .custom-input,
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .input-group > .custom-select,
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .input-group > .custom-texarea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .input-group .label{
+    font-size: 14px;
+    color: var(--text);
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .input-group > .custom-input > input{
+    width: 100%;
+    border: 1px solid var(--label);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .input-group > .custom-select > select{
+    width: 100%;
+    border: 1px solid var(--label);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .input-group > .custom-texarea > textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--label);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area > button{
+    width: 100%;
+    max-width: 130px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area > button:hover{
+    color: var(--primary);
+    background-color: white;
+    border-color: var(--primary);
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area > p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area > p.success{
+    padding: 10px;
+    background-color: #c8f7c8;
+    border: 1px solid #93C572;
+    color: green;
+    border-radius: 3px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area > p.error{
+    padding: 10px;
+    background-color: #F2D2D4;
+    border: 1px solid #FA5F55;
+    color: #FA5F55;
+    border-radius: 3px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials > .container{
+    max-width: 416px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials > .container > .label{
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials > .container > .map{
+    width: 100%;
+    height: 175px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials > .container > .contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials > .container > .contact-details > .detail{
+    display: flex;
+    gap: 20px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials > .container > .contact-details > .detail > svg{
+    min-height: 24px;
+    min-width: 24px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials > .container > .social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .contact-detials > .container > .social-icons > a > svg{
+    min-width: 30px;
+    min-height: 30px;
+}
+
+@media only screen and (max-width: 1024px){
+    #contactUsContent > .wrapper{
+        padding: 50px;
+    }
+
+    #contactUsContent > .wrapper > .contact-us-container > .form > .label{
+        font-size: 20px;
+    }
+
+    #contactUsContent > .wrapper > .contact-us-container > .form > .title{
+        font-size: 36px;
+    }
+
+    #contactUsContent > .wrapper > .contact-us-container > .form > .desc{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #contactUsContent > .wrapper > .contact-us-container{
+        flex-direction: column;
+    }
+
+    #contactUsContent > .wrapper > .contact-us-container > .form, 
+    #contactUsContent > .wrapper > .contact-us-container > .contact-detials{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #contactUsContent > .wrapper{
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+    #contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .input-group{
+        flex-direction: column;
+    }
+
+    #contactUsContent > .wrapper > .contact-us-container > .form > .title{
+        font-size: 28px;
+    }
+}

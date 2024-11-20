@@ -1,0 +1,172 @@
+#becomeDealerForm{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    gap: 50px;
+}
+
+#becomeDealerForm > .text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#becomeDealerForm > .text-content > .label{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#becomeDealerForm > .text-content > .desc{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#becomeDealerForm > .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#becomeDealerForm > .inputs > .input-group{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#becomeDealerForm > .inputs > .input-group > .custom-input,
+#becomeDealerForm > .inputs > .input-group > .custom-select,
+#becomeDealerForm > .inputs > .input-group > .custom-texarea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+#becomeDealerForm > .inputs > .input-group .label{
+    font-size: 14px;
+    color: var(--text);
+}
+
+#becomeDealerForm > .inputs > .input-group > .custom-input > input{
+    width: 100%;
+    border: 1px solid var(--label);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#becomeDealerForm > .inputs > .input-group > .custom-select > select{
+    width: 100%;
+    border: 1px solid var(--label);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#becomeDealerForm > .inputs > .input-group > .custom-texarea > textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--label);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+#becomeDealerForm > .inputs > .submit-area{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#becomeDealerForm > .inputs > .submit-area > button{
+    width: 100%;
+    max-width: 130px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+#becomeDealerForm > .inputs > .submit-area > button:hover{
+    color: var(--primary);
+    background-color: white;
+    border-color: var(--primary);
+}
+
+#becomeDealerForm > .inputs > .submit-area > p {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#becomeDealerForm > .inputs > .submit-area > p.success{
+    padding: 10px;
+    background-color: #c8f7c8;
+    border: 1px solid #93C572;
+    color: green;
+    border-radius: 3px;
+}
+
+#becomeDealerForm > .inputs > .submit-area > p.error{
+    padding: 10px;
+    background-color: #F2D2D4;
+    border: 1px solid #FA5F55;
+    color: #FA5F55;
+    border-radius: 3px;
+}
+
+#becomeDealerForm > .inputs > .checkbox-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#becomeDealerForm > .inputs > .checkbox-area > input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#becomeDealerForm > .inputs > .checkbox-area > p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#becomeDealerForm > .inputs > .checkbox-area > p > .highlight{
+    color: var(--accent);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#becomeDealerForm > .inputs > .checkbox-area > p > .highlight:hover{
+    text-decoration: underline;
+    user-select: none;
+}
+
+  
+@media only screen and (max-width: 425px){
+    #becomeDealerForm > .inputs > .input-group{
+        flex-direction: column;
+    }
+}

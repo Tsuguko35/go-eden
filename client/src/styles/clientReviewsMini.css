@@ -1,0 +1,60 @@
+#clientReviewsMini{
+    width: 100%;
+}
+
+#clientReviewsMini .swiper-container{
+    padding: 20px 0;
+}
+
+#clientReviewsMini .swiper-slide {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px -5px white;
+    padding: 15px;
+    max-height: 275px;
+}
+
+#clientReviewsMini .card *{
+    color: var(--text) !important;
+}
+
+#clientReviewsMini .card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#clientReviewsMini .card > .client-details{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#clientReviewsMini .card > .client-details > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#clientReviewsMini .card > .client-details > .name{
+    font-weight: bold;
+}
+
+#clientReviewsMini .card > .review{
+    color: var(--label) !important;
+    font-weight: 300;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#clientReviewsMini .card > .date{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--label) !important;
+    font-size: 14px;
+}

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap');
+
+:root{
+    --background: #FFFFFF;
+    --secondary-background: #D9D0BF;
+    --primary: #1A4443;
+    --secondary: #BFA280;
+    --secondary-light: #D9D0BE;
+    --text: #232323;
+    --accent: #F0C869;
+    --accent-hover: #d3af5b;
+    --accent-2: #D6AE30;
+    --accent-3: #24A0ED;
+    --green-accent: #2EC1AC;
+    --label: #ABAEAD;
+    --hero-overlay-dark: rgba(35, 35, 35, 0.25);
+    --hero-overlay-secondary: rgba(191, 162, 128, 0.62);
+    --hero-overlay-light: rgba(217, 217, 217, 0.6);
+    --hero-overlay-primary: rgba(26, 68, 67, 0.69);
+    --hero-overlay-primary-light: rgba(26, 68, 67, 0.4);
+    --faq-icon-bg: #F7F7FF;
+    --card-bg: #F7F6FB;
+    --product-details-bg: #F4F5F7;
+}
+
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-family: 'Inter';
+}
+
+img, picture, svg, video{
+    display: block;
+    max-width: 100%;
+}
+
+input, textarea, button, select{
+    font: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+*::-webkit-scrollbar{
+    width: 6px; 
+    height: 6px;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: var(--background);
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--secondary);
+    border-radius: 20px;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--primary);
+}
+
+/* Remove arrows in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Remove arrows in Chrome, Safari, and Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrows in Internet Explorer 10+ */
+input[type="number"] {
+    -ms-appearance: textfield;
+}
+
+.pages{
+    padding-top: 80px;
+}
+
+.messenger{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 180px;
+    height: 60px;
+    background-color: #006AFF;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    display: flex;
+    padding-inline: 15px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 998;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.1s ease-in;
+  }
+  
+  .messenger.mobile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .messenger:hover{
+    transform: scale(1.1);
+  }
+  
+  .messenger > svg{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .messenger.mobile > svg{
+    width: 55%;
+    height: 55%;
+  }
+  
+  .messenger > svg *{
+    color: white;
+  }
+
+.feature{
+    opacity: 0;
+}
+
+.reveal{
+    opacity: 0;
+    animation: reveal 1s ease-in-out forwards;
+}
+
+.move-line-secondary{
+    animation: moveLeftRight 2s ease-in-out infinite;
+}
+
+.move-line-dark{
+    animation: dark-line 2s ease-in-out infinite 0.2s;
+}
+
+@keyframes reveal{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeftRight {
+    0% {
+        width: 333px;
+      }
+    50% {
+        width: 100px; /* Subtract the width of the element to keep it within the viewport */
+    }
+      100% {
+        width: 333px;
+    }
+}
+
+@keyframes dark-line {
+    0% {
+        width: 202px;
+      }
+    50% {
+        width: 62px; /* Subtract the width of the element to keep it within the viewport */
+    }
+      100% {
+        width: 202px;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    .messenger{
+        right: 20px;
+        bottom: 20px;
+    }
+}

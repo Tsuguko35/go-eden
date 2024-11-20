@@ -1,0 +1,163 @@
+#clientReviewsBig{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1536px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#clientReviewsBig > .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#clientReviewsBig > .title > p:first-child{
+    color: var(--label);
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#clientReviewsBig > .title > p:last-child{
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#clientReviewsBig .swiper-container{
+    position: relative;
+    width: 100%;
+    padding: 30px 10px;
+}
+
+#clientReviewsBig::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 80px;
+    z-index: 1;
+    width: 30px;
+    height: 250px;
+    transform: translateY(-60%);
+    background-color: var(--secondary);
+    z-index: 5;
+}
+
+#clientReviewsBig .swiper-slide {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    min-height: 340px;
+    max-height: 340px;
+}
+
+#clientReviewsBig .card *{
+    color: var(--text) !important;
+}
+
+#clientReviewsBig .card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+#clientReviewsBig .card > .client-detials{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#clientReviewsBig .card > .client-detials > img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+}
+
+#clientReviewsBig .card > .client-detials > .details{
+    display: flex;
+    flex-direction: column;
+}
+
+#clientReviewsBig .card > .client-detials > .details > .name{
+    font-family: 'DM Serif Display';
+    font-size: 25px;
+}
+
+#clientReviewsBig .card > .client-detials > .details > .location{
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--label);
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 0;
+}
+
+#clientReviewsBig .card > .review{
+    font-size: 20px;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#clientReviewsBig .swiper-pagination-bullet{
+    width: 26px;
+    height: 7px;
+    opacity: 1;
+    border-radius: 0;
+    background: var(--label);
+}
+
+#clientReviewsBig .swiper-pagination-bullet-active{
+    background-color: var(--primary);
+}
+
+@media only screen and (max-width: 1024px){
+    #clientReviewsBig .card > .client-detials > .details > .name{
+        font-size: 22px;
+    }
+
+    #clientReviewsBig .card > .client-detials > .details > .location{
+        font-size: 16px;
+    }
+
+    #clientReviewsBig .card > .review{
+        font-size: 18px;
+    }
+
+    #clientReviewsBig > .title > p:last-child{
+        font-size: 28px;
+    }
+
+    #clientReviewsBig > .title > p:first-child{
+        font-size: 20px;
+    }
+
+    #clientReviewsBig{
+        padding: 50px;
+    }
+
+    #clientReviewsBig::before {
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #clientReviewsBig{
+        padding: 20px;
+    }
+
+    #clientReviewsBig::before {
+        left: 0px;
+        width: 30px;
+    }
+}
